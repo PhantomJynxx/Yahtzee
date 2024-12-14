@@ -41,8 +41,8 @@ int main() {
     
     for (int i = 0; i < maxgameturns; i++) {
         if (playercount > 1) {      // No Need to output if just one player
-            playercall = (maxgameturns % playercount)+1;
-            cout << "Player " << playercall << " is up!" << endl;
+            playercall = (i % playercount)+1;
+            cout << user[playercall-1].Pname << " is up!" << endl;
         }
 
         user[playercall].currentchance = 3;     // Reset counter before turn

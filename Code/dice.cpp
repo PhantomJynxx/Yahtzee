@@ -4,10 +4,8 @@ void Dice::rollthedice() {
     for (int i = 0; i < 5; i++) {
         if (dicehold[i] == false) {
             int roll = 0;
-            int min = 1; // the min number a die can roll is 1
-            int max = 6; // the max value is the die size
 
-            roll = rand() % (max - min + 1) + min;
+            roll = rand() % 7; // (max - min + 1) + min = 7
 
             dice[i] = roll;
         }
